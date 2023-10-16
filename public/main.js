@@ -3,8 +3,8 @@ let myDiv = document.querySelector('div');
 
 myButton.addEventListener('click', () => {
     axios.get('/cat')
-    .then(() => {
-        let catName = response.data;
+    .then((res) => {
+        let catName = res.data;
         
         myDiv.innerHTML = '';
 
